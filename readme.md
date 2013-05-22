@@ -1,55 +1,32 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+The OOO Decider
+===============
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+At some point, I got tired of writing long, elaborate OOO messages every time I was out of the office for a few days; most of that information should be reusable, and you should only need to change what's changed (updated contact info, etc.).
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+At the same time, I was also looking for a way to efficiently manage communication while OOO. People should:
 
+* be able to contact me if (and _only_ if) there's a real emergency;
+* try some of my alternate contacts in the absence of a real emergency; and
+* be able to get in touch with me when I'm back if they really need to talk to me.
 
-## Quick start
+Getting all of this text into a single message in a readable way was a bit of a pain. So, I decided to style use the amazing @[akiany](https://github.com/akiany)'s JS decision wizard code into a decision tree people could use to decide what to do with me OOO. So now, instead of writing:
 
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
+> Hi, I'm out of the office, but you can contact me here, unless you need to talk to Phil, in which case his phone number is 123-456-7890, but don't call Phil about X, email Janet about X, and her phone number is 987-654-3210, but she's only in on Tuesday, so if it's not Tuesday, email Pat, and I'd be amazed if you're still reading this and even remember why you wanted to email me in the first place etc etc etc
 
+You can just write:
 
-## Features
+> Sorry, I'm out of the office. For more info, see [http://danmunz.github.io/ooo/](http://danmunz.github.io/ooo/)
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+This site also takes advantage of some great jQuery plugins:
+
+* [Backstretch](http://srobbin.com/jquery-plugins/backstretch/) for nice-looking responsive background images
+* [Scrollto](http://flesler.blogspot.com/2007/10/jqueryscrollto.html) for smooth scrolling and starting the page at the top each time
+* [DetectMobileBrowsers](http://detectmobilebrowsers.com/) for when I include some fanicness that isn't supported/appropriate on mobile
 
 
-## Contributing
+Features
+--------
 
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
-
-
-## Project information
-
-* Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
-
-
-## License
-
-### Major components:
-
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
-
-### Everything else:
-
-The Unlicense (aka: public domain)
+* Defines a true 'emergency' and routes people with one to my emergency contact info.
+* Provides a clear list of alternate contacts, with e-mail addresses encoded into HTML entities
+* Offers download of an ICS file to prompt a visitor to email me when I'm back
