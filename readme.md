@@ -11,7 +11,7 @@ At the same time, I was also looking for a way to efficiently manage communicati
 
 Getting all of this text into a single message in a readable way was a bit of a pain. So, I decided to style use the amazing @[akiany](https://github.com/akiany)'s JS decision wizard code into a decision tree people could use to decide what to do with me OOO. So now, instead of writing:
 
-> Hi, I'm out of the office, but you can contact me here, unless you need to talk to Phil, in which case his phone number is 123-456-7890, but don't call Phil about X, email Janet about X, and her phone number is 987-654-3210
+> Hi, I'm out of the office, but you can contact me here, unless you need to talk to Phil, in which case his phone number is 123-456-7890, but don't call Phil about X, email Janet about X, and her phone number is 987-654-3210, but she's only in on Tuesday, so if it's not Tuesday, email Pat, and I'd be amazed if you're still reading this and even remember why you wanted to email me in the first place etc etc etc
 
 You can just write:
 
