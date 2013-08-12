@@ -48,7 +48,7 @@
 						<div id='wizroot'></div>
 						<div id='wiz_templates' style='display:none;'>
 							<div id='page_171'>
-								<p>Sorry, I'm currently out of the office. I'll be without email or Blackberry access from <strong>Thursday, May 23rd</strong> until <strong>Tuesday, May 28th</strong>. But don't panic! I'll help you figure out what to do.</p>
+								<p>Sorry, I'm currently out of the office. I'll be without email or Blackberry access from <strong>Wednesday, August 14th</strong> until <strong>Tuesday, August 27th</strong>. But don't panic! I'll help you figure out what to do.</p>
 								<p>Let's start with the most important question:</p>
 								 <h2>Is this an emergency?</h2>
 
@@ -78,9 +78,6 @@
 
 								<p>Here are contacts for issues regarding specific business units at CFPB:</p>
 								<ul>
-									<li>Consumer Education and Engagement: <a href="mailto:&#078;&#111;&#097;&#104;&#046;&#075;&#117;&#110;&#105;&#110;&#064;&#099;&#102;&#112;&#098;&#046;&#103;&#111;&#118;">&#078;&#111;&#097;&#104;&#046;&#075;&#117;&#110;&#105;&#110;&#064;&#099;&#102;&#112;&#098;&#046;&#103;&#111;&#118;</a>
-
-									</li>
 									<li>Consumer Response: <a href="mailto:&#077;&#097;&#116;&#116;&#104;&#101;&#119;&#046;&#066;&#097;&#105;&#108;&#101;&#121;&#064;&#099;&#102;&#112;&#098;&#046;&#103;&#111;&#118;">&#077;&#097;&#116;&#116;&#104;&#101;&#119;&#046;&#066;&#097;&#105;&#108;&#101;&#121;&#064;&#099;&#102;&#112;&#098;&#046;&#103;&#111;&#118;</a>
 
 									</li>
@@ -127,10 +124,13 @@
 						</div>
 					</div>
 					<footer>
-					<p>Photo <a href="http://www.flickr.com/photos/specialagent/5177986121/">"Bourbon Street @ Sun Up"</a> from Flickr by user Ken Yuel.
+					<p>Photo <a href="http://www.flickr.com/photos/leebennett/8403912230/">"Bar Harbor"</a> from Flickr by user leebennett
 					</p>
 					
 					</footer>
+					
+					<div id="lobster"></div>
+					
 					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 					<script>
 						window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
@@ -142,7 +142,7 @@
 					<script src="js/detectmobilebrowser.js"></script>
 					<script type="text/javascript">
 						$(document).ready(function () {
-							$.backstretch("http://farm2.staticflickr.com/1278/5177986121_942d8ef16c_o.jpg");
+							$.backstretch("http://farm9.staticflickr.com/8363/8403912230_1a7ae0ee16_o.jpg");
 							$.fn.wizify = function (e) {
 								function i(t) {
 									function n(e) {
@@ -261,9 +261,46 @@
 									]
 								});
 							});
+
+							setTimeout(function() {
+								var viewportHeight = $(window).height() + 224;
+								$('#lobster').height(viewportHeight);
+								
+								var i = viewportHeight;								
+								setInterval(function() {
+										if (i > 0){
+										i--;
+										$('#lobster').height(i);										
+										}
+								}, 50);
+								
+								setInterval(function() {
+										if (i > 0){
+										i--;
+											if (isEven(i) == true){
+												$('#lobster').css('margin-left','-10px');											
+											}else{
+												$('#lobster').css('margin-left','-20px');																	
+											}										
+										}
+								}, 200);
+
+							}, 10000);
+						
 						});
+					
+					function isEven(value) {
+						if (value%2 == 0)
+							return true;
+						else
+							return false;
+					}					
 					</script>
 					<script>
+					
+					
+					
+					
 						var _gaq = [
 							['_setAccount', 'UA-6102405-1'],
 							['_trackPageview']
