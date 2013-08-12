@@ -297,12 +297,10 @@ background: none;
 	background: url('https://raw.github.com/danmunz/ooo/BARHARBOR-2013/img/lobster.png');
 	background-repeat: no-repeat;
 	background-position-y: bottom;
-	background
 	width: 123px;
 	position: fixed;
 	top: 0px;
 	margin-left: -20px;
-/*	display: none;*/
 }
 
 p {
