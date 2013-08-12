@@ -294,7 +294,7 @@ background: none;
 }
 
 #lobster{
-	background: url('../img/lobster.png');
+	background: url('https://raw.github.com/danmunz/ooo/BARHARBOR-2013/img/lobster.png');
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 	background
