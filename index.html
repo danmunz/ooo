@@ -174,7 +174,9 @@
 												duration: 200,
 												easing: 'linear'
 											});
-											_gaq.push(['_trackPageview', 'ooo/' + document.location.hash]);
+//											_gaq.push(['_trackPageview', 'ooo/' + document.location.hash]);
+											ga('send', 'pageview', 'ooo/' + document.location.hash);
+
 										}), $(".wiz_btns").append(n);
 									}), document.location.hash != "#" + e && (document.location.hash = "#" + e), t = e, n[0].focus()
 								}
@@ -247,11 +249,20 @@
 						});
 					
 					</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-6102405-1','auto');ga('send','pageview');
+        </script>
+
+
+<!-- //Killing the old GA
 					<script>
-					
-					
-					
-					
 						var _gaq = [
 							['_setAccount', 'UA-6102405-1'],
 							['_trackPageview']
@@ -263,6 +274,8 @@
 							s.parentNode.insertBefore(g, s)
 						}(document, 'script'));
 					</script>
+-->
+					
 				</body>
 				
 				</html>
